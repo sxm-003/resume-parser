@@ -5,7 +5,7 @@ import json
 from sklearn.model_selection import train_test_split
 
 # Load the training data from a JSON file
-resume_info= json.load(open('train_data.json','r'))
+resume_info= json.load(open('Data_batch/train_data.json','r'))
 
 def convert_spacyDocBin(log_file,data):
     """
@@ -65,12 +65,12 @@ def convert_spacyDocBin(log_file,data):
 train, test = train_test_split(resume_info, test_size =0.1)
 
 
-log_file = open('error.txt','w')
+log_file = open('Data_batch/error.txt','w')
 # Convert the train and test data spaCy DocBin format and save to disk
 db = convert_spacyDocBin(log_file,train)
-db.to_disk('train_data.spacy')
+db.to_disk('Data_batch/train_data.spacy')
 
 db= convert_spacyDocBin(log_file,test)
-db.to_disk('test_data.spacy')
+db.to_disk('Data_batch/test_data.spacy')
 
 log_file.close()
