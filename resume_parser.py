@@ -3,7 +3,7 @@ from pdfminer.high_level import extract_text
 import spacy
 
 # Path to the trained spaCy model, I will be updating the models
-model_path = "/content/output1/model-best"
+model_path = "/model/model1"
 
 # Load the trained spaCy model for NER
 try:
