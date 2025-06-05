@@ -17,11 +17,12 @@ To train your own Named Entity Recognition (NER) model with spaCy, please follow
 
 **1. Data Preparation**
 
-Begin by converting your annotated NER JSON data into spaCy's efficient DocBin format. Use the provided spacy\_conversion.py script for this purpose:
+Begin by converting your annotated NER JSON data into spaCy's efficient DocBin format. Use the provided spacy_conversion.py program and insert training data in ./Data_batch or update the filepath in the spacy_conversion.py.
+Run:
 
 ```
 
-python spacy\_conversion.py --input your\_ner\_data.json --output Data\_batch/train\_data.spacy
+spacy_conversion.py
 
 ```
 
