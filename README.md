@@ -19,11 +19,11 @@ To train your own Named Entity Recognition (NER) model with spaCy, please follow
 
 Begin by converting your annotated NER JSON data into spaCy's efficient DocBin format. Use the provided spacy\_conversion.py script for this purpose:
 
-\```
+```
 
 python spacy\_conversion.py --input your\_ner\_data.json --output Data\_batch/train\_data.spacy
 
-\```
+```
 
 This ensures your data is in the optimal format for spaCy training.
 
@@ -33,11 +33,11 @@ A default configuration file, config.cfg, is included in the repository. This co
 
 To initiate training, use the following command:
 
-\```
+```
 
 python -m spacy train config.cfg --output ./model\_output --paths.train ./Data\_batch/train\_data.spacy --paths.dev ./Data\_batch/test\_data.spacy
 
-\```
+```
 
 `    `--output ./model\_output: Directory where the trained model will be saved.
 
@@ -77,11 +77,11 @@ To extract structured information from resumes using the provided script, follow
 
 Execute the following command in your terminal:
 
-\```
+```
 
 python resume\_parser.py
 
-\```
+```
 
 The script will automatically process the resumes in the specified folder.
 
