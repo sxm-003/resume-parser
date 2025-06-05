@@ -4,12 +4,15 @@ A Python-based tool using spaCy for extracting structured information from resum
 
 # <a name="_4eo6j4cs72ur"></a>**Installation Steps**
 ## <a name="_sfyltky7dan2"></a>**Clone the Repository**
+```
 git clone https://github.com/sxm-003/resume-parser.git
 
 cd resume-parser
+```
 ## <a name="_803gouyi2fqf"></a>**Install Dependencies**
+```
 pip install -r requirements.txt
-
+```
 
 **Training Your Own Custom spaCy Model**
 
