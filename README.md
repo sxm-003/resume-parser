@@ -83,7 +83,7 @@ Execute the following command in your terminal:
 
 ```
 
-python resume\_parser.py
+python resume_parser.py
 
 ```
 
