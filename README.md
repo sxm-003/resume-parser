@@ -39,7 +39,7 @@ To initiate training, use the following command:
 
 ```
 
-python -m spacy train config.cfg --output ./model\_output --paths.train ./Data\_batch/train\_data.spacy --paths.dev ./Data\_batch/test\_data.spacy
+python -m spacy train config.cfg --output ./model_output --paths.train ./Data_batch/train_data.spacy --paths.dev ./Data_batch/test_data.spacy
 
 ```
 
@@ -53,9 +53,9 @@ python -m spacy train config.cfg --output ./model\_output --paths.train ./Data\_
 
 For your convenience, pre-converted data in spaCy's format is already available within the Data\_batch directory:
 
-`    `Training data: Data\_batch/train\_data.spacy
+`    `Training data: Data_batch/train_data.spacy
 
-`    `Test/Development data: Data\_batch/test\_data.spacy
+`    `Test/Development data: Data_batch/test_data.spacy
 
 You can use these files directly for training and evaluation, or replace them with your own data as needed.
 
